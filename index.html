@@ -21,7 +21,7 @@
               <h1 class="h5 mb-0 fw-bold">Income Category Registration</h1>
             </div>
             <div class="card-body p-4">
-              <form id="categoryForm">
+              <form id="categoryForm" novalidate> <!-- novalidate added (Kit Modification)-->
                 <div class="mb-3">
                   <label for="txtCatName" class="form-label fw-semibold"
                     >Category Name</label
@@ -34,6 +34,9 @@
                     required
                   />
                 </div>
+
+                <div class="invalid-feedback">Please enter a category name.</div> <!-- added invalid feedback on category name (Kit Modification)-->
+
                 <div class="mb-3">
                   <label for="txtCatDesc" class="form-label fw- semibold"
                     >Description</label
@@ -46,6 +49,9 @@
                     placeholder="e.g., Enterprise technical support contract"
                     required
                   />
+
+                  <div class="invalid-feedback">Please enter a category description.</div> <!-- added invalid feedback on category description (Kit Modification)-->
+                  
                 </div>
 
                 <button
