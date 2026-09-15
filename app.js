@@ -11,7 +11,6 @@ function handleAddCategory() {
   const catDesc = categoryDescInput.value.trim();
 
   if (!catName || !catDesc) {
-    alert("Please complete both input fields.");
     feedbackBox.className = "alert alert-danger";
     feedbackBox.textContent = "Please complete both input fields.";
     return;
